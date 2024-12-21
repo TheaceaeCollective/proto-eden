@@ -1,0 +1,121 @@
+/* Import favorite font */
+@import url(author.css);
+
+/* Global elements, such as headers, footers, and body. */
+/* very dark theme, tried to keep this simple */
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Author";
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* begin */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    width: 100%;
+    min-height: 100vh;
+}
+
+.bgImage {
+    width: 100%;
+    min-height: 100vh;
+    position: fixed;
+    background-size: cover;
+    object-fit: cover;
+    z-index: -100;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1260px;
+    padding-top: 200px;
+    padding-bottom: 18px;
+}
+
+footer p {
+    padding-top: 6px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+#introText1 {
+    font-family: "Times New Roman";
+    text-shadow: 0 0 4px #000;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#introText2 {
+    font-family: "Times New Roman";
+    text-shadow: 0 0 4px #000;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    width: 100%;
+    height: 72px;
+    border-radius: 8px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.25), inset 0 -1px 1px 0 rgba(255, 255, 255, 0.1), 0 32px 40px 0 rgba(0, 0, 0, 0.24);
+    background-color: rgba(40, 24, 36, 0.8);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnGroup {
+    width: 100%;
+    max-width: 580px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    transition: 300ms;
+}
+
+a:hover {
+    background-color: rgba(40, 24, 36, 1);
+    transition: 80ms;
+}
