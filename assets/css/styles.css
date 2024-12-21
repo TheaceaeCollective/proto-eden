@@ -110,12 +110,20 @@ main {
     justify-content: center;
 }
 
-a {
+.btnGroup a {
     text-decoration: none;
     transition: 300ms;
 }
 
-a:hover {
+.btnGroup a:hover {
     background-color: rgba(40, 24, 36, 1);
     transition: 80ms;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(148, 148, 148);
 }
