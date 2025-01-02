@@ -1,4 +1,4 @@
 
 # Eden's Website
 
-Uhh wip
+work in progress!
